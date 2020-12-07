@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="hibernate.connection.password">TabShift!$#!</property>
+        <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1388;instanceName=SQL2008;databaseName=Tax2019</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+        
+        <!--     
+        <mapping resource="org/model/Course.hbm.xml" />
+        -->
+		<!--         
+        <mapping class="luotl.tax.model.Wage"/>
+        <mapping resource="luotl/tax/model/Wage.hbm.xml" /> 
+         -->
+        <mapping class="test1.Invoice"/>
+        <mapping class="test1.Wage"/>
+    </session-factory>
+</hibernate-configuration>
